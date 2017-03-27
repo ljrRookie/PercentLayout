@@ -19,7 +19,7 @@ public class TabLayoutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tab_layout);
         mMainTab = (TabLayout) findViewById(R.id.main_tab);
         mMainVp = (ViewPager) findViewById(R.id.main_vp);
-initViewPager();
+        initViewPager();
     }
 
     private void initViewPager() {
@@ -27,6 +27,7 @@ initViewPager();
         titles.add("百分比线性布局");
         titles.add("百分比相对布局");
         titles.add("百分比帧布局");
+        //为tab添加标题
         for(int i=0;i<titles.size();i++){
             mMainTab.addTab(mMainTab.newTab().setText(titles.get(i)));
         }
